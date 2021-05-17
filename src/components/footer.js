@@ -2,28 +2,12 @@ import Container from './container'
 
 export default function Footer() {
   return (
-    <footer className="bg-accent-1 border-t border-accent-2">
-      <Container>
-        <div className="py-28 flex flex-col lg:flex-row items-center">
-          <h3 className="text-4xl lg:text-5xl font-bold tracking-tighter leading-tight text-center lg:text-left mb-10 lg:mb-0 lg:pr-4 lg:w-1/2">
-            Statically Generated with Gatsby Next.js.
-          </h3>
-          <div className="flex flex-col lg:flex-row justify-center items-center lg:pl-4 lg:w-1/2">
-            <a
-              href="https://www.datocms.com/docs/next-js"
-              className="mx-3 bg-black hover:bg-white hover:text-black border border-black text-white font-bold py-3 px-12 lg:px-8 duration-200 transition-colors mb-6 lg:mb-0"
-            >
-              Read Documentation
-            </a>
-            <a
-              href="https://github.com/datocms/nextjs-demo"
-              className="mx-3 font-bold hover:underline"
-            >
-              View on GitHub
-            </a>
-          </div>
+    <footer>
+      <div class="container mx-auto">
+        <div class="pb-20 px-5 py-4 text-xs mx-4 my-2 sm:my-14 sm:mx-16 text-center sm:text-center md:text-center lg:text-left xl:text-left">
+            <b>Copyright © 2020 - <a href="https://www.distictperspective.com">Distinct Perspective, LLC.</a></b><p>All Rights Reserved.</p><p>Use of this site constitutes acceptance of our User Agreement (updated 10/25/19) and Privacy Policy and Cookie Statement (updated 10/25/19) and Your California Privacy Rights.</p>
         </div>
-      </Container>
+      </div>
     </footer>
   )
 }
