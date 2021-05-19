@@ -3,7 +3,7 @@ import React from "react";
 
 export default function Header() {
   return (
-    <div class="sticky top-0 z-50 py-0 lg:py-2 bg-white shadow-md">
+    <div class="sticky top-0 z-50 py-0 lg:py-2 px-2 bg-white shadow-md py-0 lg:py-2">
         <Navbar />
     </div>    
   )
