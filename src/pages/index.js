@@ -59,7 +59,7 @@ export const query = graphql`
             fixed(
               width: 48
               height: 48
-              imgixParams: { fm: "jpg", fit: "crop", sat: -100 }
+              imgixParams: { fm: "auto", fit: "crop", sat: -100 }
             ) {
               ...GatsbyDatoCmsFixed
             }
