@@ -5,8 +5,8 @@ import React from "react"
 export default function Layout({ children }) {
   return (
     <body class="font-sans antialiased text-gray-600 bg-f1 leading-normal tracking-normal">
-      <div>
-        <Header />
+    <Header />  
+      <div class="container mx-auto">
         {children}
         <Footer />
       </div>
