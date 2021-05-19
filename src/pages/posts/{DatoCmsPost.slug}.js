@@ -1,6 +1,6 @@
 import React from "react";
 import { graphql } from "gatsby";
-import Container from "../../components/container";
+import Layout from "../../components/layout";
 import Header from "../../components/header";
 import MoreStories from "../../components/more-stories";
 import PostBody from "../../components/post-body";
@@ -10,7 +10,7 @@ import { HelmetDatoCms } from "gatsby-source-datocms";
 
 export default function Post({ data: { site, post, morePosts } }) {
   return (
-    <Container>
+    <Layout>
       <HelmetDatoCms seo={post.seo} favicon={site.favicon} />
       <Header />
       <article>
@@ -24,7 +24,7 @@ export default function Post({ data: { site, post, morePosts } }) {
       </article>
       <SectionSeparator />
       {morePosts.nodes.length > 0 && <MoreStories posts={morePosts.nodes} />}
-    </Container>
+    </Layout>
   );
 }
 

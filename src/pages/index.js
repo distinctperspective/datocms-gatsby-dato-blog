@@ -1,19 +1,17 @@
 import React from "react";
-import Container from "../components/container";
+import Layout from "../components/layout";
 import HeroPost from "../components/hero-post";
 import MoreStories from "../components/more-stories";
 import { HelmetDatoCms } from "gatsby-source-datocms";
 import { graphql } from "gatsby";
-import Navbar from "../components/navbar";
 
 export default function Index({ data: { allPosts, site, blog } }) {
   const heroPost = allPosts.nodes[0];
   const morePosts = allPosts.nodes.slice(1);
 
   return (
-    <Container>
+    <Layout>
       <HelmetDatoCms seo={blog.seo} favicon={site.favicon} />
-      <Navbar />
       {heroPost && (
         <HeroPost
           title={heroPost.title}
@@ -25,7 +23,7 @@ export default function Index({ data: { allPosts, site, blog } }) {
         />
       )}
       {morePosts.length > 0 && <MoreStories posts={morePosts} />}
-    </Container>
+    </Layout>
   );
 }
 

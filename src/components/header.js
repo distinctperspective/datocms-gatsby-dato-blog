@@ -3,6 +3,8 @@ import React from "react";
 
 export default function Header() {
   return (
-    <Navbar />
+    <div class="sticky top-0 z-50">
+      <Navbar />
+    </div>    
   )
 }
