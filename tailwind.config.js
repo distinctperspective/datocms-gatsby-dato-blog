@@ -233,6 +233,7 @@ module.exports = {
     },
     fontFamily: {
       sans: [
+        '"Martel Sans"',
         '-apple-system',
         'BlinkMacSystemFont',
         '"Segoe UI"',
