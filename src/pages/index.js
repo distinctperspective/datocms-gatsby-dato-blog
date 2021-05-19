@@ -46,10 +46,10 @@ export const query = graphql`
         excerpt
         date
         coverImage {
-          large: fluid(imgixParams: { fm: "auto" }, sizes: "(max-width: 1500px) 100vw, 1500px") {
+          large: fluid(imgixParams: { fm: "jpg", auto: "format" }, sizes: "(max-width: 1500px) 100vw, 1500px") {
             ...GatsbyDatoCmsFluid
           }
-          small: fluid(imgixParams: { fm: "auto" }, sizes: "(max-width: 760px) 100vw, (max-width: 1500px) 50vw, 700px") {
+          small: fluid(imgixParams: { fm: "jpg", auto: "format" }, sizes: "(max-width: 760px) 100vw, (max-width: 1500px) 50vw, 700px") {
             ...GatsbyDatoCmsFluid
           }
         }
@@ -59,7 +59,7 @@ export const query = graphql`
             fixed(
               width: 48
               height: 48
-              imgixParams: { fm: "auto", fit: "crop", sat: -100 }
+              imgixParams: { fm: "jpg", auto: "format", fit: "crop", sat: -100 }
             ) {
               ...GatsbyDatoCmsFixed
             }
