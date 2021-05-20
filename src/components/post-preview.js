@@ -21,7 +21,7 @@ export default function PostPreview({
           fluid={coverImage.small}
         />
       </div>
-      <div class="mx-4 xl:mx-0 ">
+      <div className="mx-4 xl:mx-0 ">
         <h3 className="text-3xl lg:text-3xl font-extrabold tracking-tight text-gray mb-3 leading-tight">
           <Link to={`/posts/${slug}`} className="hover:underline">
             {title}

@@ -1,15 +1,19 @@
 import Header from "../components/header";
 import Footer from "../components/footer";
 import React from "react"
+import Helmet from 'react-helmet';
 
-export default function Layout({ children }) {
+export default function Layout({ navlinks, children }) {
   return (
-    <body class="font-sans antialiased text-gray-600 bg-f1 leading-normal tracking-normal">
-    <Header />  
-      <div class="container mx-auto">
+    <div className="font-sans antialiased text-gray-600 bg-f1 leading-normal tracking-normal">
+      <Helmet>
+        <link rel="preconnect" href="https://datocms-assets.com" />
+      </Helmet>
+      <Header navlinks={navlinks} />  
+      <div className="container mx-auto">
         {children}
         <Footer />
       </div>
-    </body>
+    </div>
   )
 }
